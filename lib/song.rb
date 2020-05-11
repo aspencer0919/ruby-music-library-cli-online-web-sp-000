@@ -11,7 +11,8 @@ class Song
   end
 
   def self.create(name)
-    new(name).tap{|a| a.save}
+    new_song = new(name)
+    new_song.save
   end
 
   def self.all
