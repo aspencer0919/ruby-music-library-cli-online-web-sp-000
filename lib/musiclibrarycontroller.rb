@@ -88,7 +88,7 @@ class MusicLibraryController
         song = array[input-1]
         puts "Playing #{song.name} by #{song.artist.name}"
       else
-        nil
+        return nil
       end
     end
   end
