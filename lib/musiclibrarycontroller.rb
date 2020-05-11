@@ -88,11 +88,4 @@ class MusicLibraryController
       end
     end
   end
-=======
-      puts "Please select from the following options:"
-      puts "list songs, list artists, list genres"
-      input = gets.strip
-    end
-  end
 end
->>>>>>> da117424338963e82a65a11c16aee29dfd4a21ed
