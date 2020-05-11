@@ -1,3 +1,4 @@
+require 'pry'
 class MusicLibraryController
   extend Concerns::Findable
 
@@ -39,6 +40,7 @@ class MusicLibraryController
 
   def list_songs
     sorted_songs = Song.all.sort {|a, b| a.name <=> b.name}
+    binding.pry
     sorted_songs.each.with_index(1) {|song,i| puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"}
   end
 
